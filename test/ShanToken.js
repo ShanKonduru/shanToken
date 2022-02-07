@@ -2,6 +2,17 @@ var ShanToken = artifacts.require("../contracts/ShanToken.sol");
 
 contract('ShanToken', function(accounts){
     var tokenInstance;
+
+    it('Initialize Contract with valid Name', function(){
+        return ShanToken.deployed().then(function(instance){
+            tokenInstance = instance;
+            return tokenInstance.name();
+        }).then(function(name){
+            assert.equal(name, 'Shan Token', 'the contract has valid name');
+        });
+    });
+
+
     it('sets total supply upon deployment', function(){
         return ShanToken.deployed().then(function(instance){
             tokenInstance = instance;
