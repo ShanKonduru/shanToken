@@ -21,6 +21,14 @@ contract('ShanToken', function(accounts){
         });
     });
 
+    it('Initialize Contract with valid Standard', function(){
+        return ShanToken.deployed().then(function(instance){
+            tokenInstance = instance;
+            return tokenInstance.standard();
+        }).then(function(standard){
+            assert.equal(standard, 'Shan Token v1.0.0', 'the contract has valid standard');
+        });
+    });
 
     it('sets total supply upon deployment', function(){
         return ShanToken.deployed().then(function(instance){

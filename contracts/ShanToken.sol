@@ -7,6 +7,7 @@ contract ShanToken{
 
     string public name  = "Shan Token";
     string public symbol  = "ShanT";
+    string public standard = "Shan Token v1.0.0";
     
 
     mapping (address => uint256) public balanceOf;
