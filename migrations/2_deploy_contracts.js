@@ -1,5 +1,5 @@
 const ShanToken = artifacts.require("../contracts/ShanToken.sol");
 
 module.exports = function (deployer) {
-  deployer.deploy(ShanToken);
+  deployer.deploy(ShanToken, 100000);
 };
