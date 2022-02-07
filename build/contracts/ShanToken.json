@@ -8,7 +8,7 @@
     },
     {
       "inputs": [],
-      "name": "totalSupplyOfTokens",
+      "name": "totalSupply",
       "outputs": [
         {
           "internalType": "uint256",
@@ -17,12 +17,13 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"totalSupplyOfTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ShanToken.sol\":\"ShanToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ShanToken.sol\":{\"keccak256\":\"0xc041a1680cc0058d9c9d5f276cdb4deec7c3f70f174047dbebcab44e23f96451\",\"urls\":[\"bzz-raw://d795321baeabf6365fecfd8b7a0a243d6b87fdae766286cbc245d45cc8f875fb\",\"dweb:/ipfs/QmRtvdDBksKhwQoWyqMUSNJk4dYPQoemUUMz5YMbM2Mey6\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50620186a060008190555060b3806100296000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b385bea114602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60005481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea26469706673582212204f85f6b46d5969ffd7ce2ad6f0f93e6f06fb1831f6b52ec34fa4c4a6e07f218d64736f6c634300080b0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b385bea114602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60005481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea26469706673582212204f85f6b46d5969ffd7ce2ad6f0f93e6f06fb1831f6b52ec34fa4c4a6e07f218d64736f6c634300080b0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ShanToken.sol\":\"ShanToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ShanToken.sol\":{\"keccak256\":\"0x110b76cc65a12f7ebc8df8b1e8d6f666fb07281a448a798520e8386e696560cd\",\"urls\":[\"bzz-raw://56bdaf35059242c2e7557308a045a724d4b0932e3cc2f6a995cdd026f233b736\",\"dweb:/ipfs/QmPD71CpqQBWoqCxN8zXuXd5UQ8Uv7eJU9ET9848SYpuqH\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50620186a060008190555060b3806100296000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60005481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea264697066735822122049cfdafe6dc848315d35dbefc214a8a066ddc26d6641a2264a905b764e4d397d64736f6c634300080b0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60005481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea264697066735822122049cfdafe6dc848315d35dbefc214a8a066ddc26d6641a2264a905b764e4d397d64736f6c634300080b0033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -253,9 +254,9 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "28:220:1:-:0;;;185:60;;;;;;;;;;231:6;209:19;:28;;;;28:220;;;;;;",
-  "deployedSourceMap": "28:220:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;143:34;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:2:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
-  "source": "pragma solidity ^0.8.11;\r\n\r\ncontract ShanToken{\r\n\r\n    // This value store number of Tokens to be made avaialble for this Smart Contract \r\n    uint256 public totalSupplyOfTokens;\r\n     constructor(){\r\n        totalSupplyOfTokens = 100000;\r\n    }\r\n}",
+  "sourceMap": "28:204:1:-:0;;;177:52;;;;;;;;;;215:6;201:11;:20;;;;28:204;;;;;;",
+  "deployedSourceMap": "28:204:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;143:26;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:2:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
+  "source": "pragma solidity ^0.8.11;\r\n\r\ncontract ShanToken{\r\n\r\n    // This value store number of Tokens to be made avaialble for this Smart Contract \r\n    uint256 public totalSupply;\r\n     constructor(){\r\n        totalSupply = 100000;\r\n    }\r\n}",
   "sourcePath": "C:\\shanToken\\contracts\\ShanToken.sol",
   "ast": {
     "absolutePath": "project:/contracts/ShanToken.sol",
@@ -295,14 +296,14 @@
         "nodes": [
           {
             "constant": false,
-            "functionSelector": "b385bea1",
+            "functionSelector": "18160ddd",
             "id": 36,
             "mutability": "mutable",
-            "name": "totalSupplyOfTokens",
-            "nameLocation": "158:19:1",
+            "name": "totalSupply",
+            "nameLocation": "158:11:1",
             "nodeType": "VariableDeclaration",
             "scope": 45,
-            "src": "143:34:1",
+            "src": "143:26:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -325,7 +326,7 @@
             "body": {
               "id": 43,
               "nodeType": "Block",
-              "src": "198:47:1",
+              "src": "190:39:1",
               "statements": [
                 {
                   "expression": {
@@ -336,11 +337,11 @@
                     "lValueRequested": false,
                     "leftHandSide": {
                       "id": 39,
-                      "name": "totalSupplyOfTokens",
+                      "name": "totalSupply",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 36,
-                      "src": "209:19:1",
+                      "src": "201:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -357,14 +358,14 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "231:6:1",
+                      "src": "215:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_100000_by_1",
                         "typeString": "int_const 100000"
                       },
                       "value": "100000"
                     },
-                    "src": "209:28:1",
+                    "src": "201:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -372,7 +373,7 @@
                   },
                   "id": 42,
                   "nodeType": "ExpressionStatement",
-                  "src": "209:28:1"
+                  "src": "201:20:1"
                 }
               ]
             },
@@ -387,27 +388,27 @@
               "id": 37,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "196:2:1"
+              "src": "188:2:1"
             },
             "returnParameters": {
               "id": 38,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "198:0:1"
+              "src": "190:0:1"
             },
             "scope": 45,
-            "src": "185:60:1",
+            "src": "177:52:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 46,
-        "src": "28:220:1",
+        "src": "28:204:1",
         "usedErrors": []
       }
     ],
-    "src": "0:248:1"
+    "src": "0:232:1"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/ShanToken.sol",
@@ -447,14 +448,14 @@
         "nodes": [
           {
             "constant": false,
-            "functionSelector": "b385bea1",
+            "functionSelector": "18160ddd",
             "id": 36,
             "mutability": "mutable",
-            "name": "totalSupplyOfTokens",
-            "nameLocation": "158:19:1",
+            "name": "totalSupply",
+            "nameLocation": "158:11:1",
             "nodeType": "VariableDeclaration",
             "scope": 45,
-            "src": "143:34:1",
+            "src": "143:26:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -477,7 +478,7 @@
             "body": {
               "id": 43,
               "nodeType": "Block",
-              "src": "198:47:1",
+              "src": "190:39:1",
               "statements": [
                 {
                   "expression": {
@@ -488,11 +489,11 @@
                     "lValueRequested": false,
                     "leftHandSide": {
                       "id": 39,
-                      "name": "totalSupplyOfTokens",
+                      "name": "totalSupply",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 36,
-                      "src": "209:19:1",
+                      "src": "201:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -509,14 +510,14 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "231:6:1",
+                      "src": "215:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_100000_by_1",
                         "typeString": "int_const 100000"
                       },
                       "value": "100000"
                     },
-                    "src": "209:28:1",
+                    "src": "201:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -524,7 +525,7 @@
                   },
                   "id": 42,
                   "nodeType": "ExpressionStatement",
-                  "src": "209:28:1"
+                  "src": "201:20:1"
                 }
               ]
             },
@@ -539,35 +540,43 @@
               "id": 37,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "196:2:1"
+              "src": "188:2:1"
             },
             "returnParameters": {
               "id": 38,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "198:0:1"
+              "src": "190:0:1"
             },
             "scope": 45,
-            "src": "185:60:1",
+            "src": "177:52:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 46,
-        "src": "28:220:1",
+        "src": "28:204:1",
         "usedErrors": []
       }
     ],
-    "src": "0:248:1"
+    "src": "0:232:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.11+commit.d7f03943.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x703fB6968aa37Aa4D2Ba432C7FA55364EB2B089B",
+      "transactionHash": "0x4996b41169eaebace86fc0f94398cf615705a233234759b2ed70093b6fc21d4b"
+    }
+  },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-07T12:25:02.794Z",
+  "updatedAt": "2022-02-07T12:43:26.421Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

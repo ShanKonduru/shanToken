@@ -3,8 +3,8 @@ pragma solidity ^0.8.11;
 contract ShanToken{
 
     // This value store number of Tokens to be made avaialble for this Smart Contract 
-    uint256 public totalSupplyOfTokens;
+    uint256 public totalSupply;
      constructor(){
-        totalSupplyOfTokens = 100000;
+        totalSupply = 100000;
     }
 }
