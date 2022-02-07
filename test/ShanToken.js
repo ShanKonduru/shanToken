@@ -12,6 +12,15 @@ contract('ShanToken', function(accounts){
         });
     });
 
+    it('Initialize Contract with valid Symbol', function(){
+        return ShanToken.deployed().then(function(instance){
+            tokenInstance = instance;
+            return tokenInstance.symbol();
+        }).then(function(symbol){
+            assert.equal(symbol, 'ShanT', 'the contract has valid symbol');
+        });
+    });
+
 
     it('sets total supply upon deployment', function(){
         return ShanToken.deployed().then(function(instance){

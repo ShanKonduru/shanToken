@@ -6,6 +6,8 @@ contract ShanToken{
     uint256 public totalSupply;
 
     string public name  = "Shan Token";
+    string public symbol  = "ShanT";
+    
 
     mapping (address => uint256) public balanceOf;
 
