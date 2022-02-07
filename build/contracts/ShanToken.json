@@ -17,8 +17,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ShanToken.sol\":\"ShanToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ShanToken.sol\":{\"keccak256\":\"0x110b76cc65a12f7ebc8df8b1e8d6f666fb07281a448a798520e8386e696560cd\",\"urls\":[\"bzz-raw://56bdaf35059242c2e7557308a045a724d4b0932e3cc2f6a995cdd026f233b736\",\"dweb:/ipfs/QmPD71CpqQBWoqCxN8zXuXd5UQ8Uv7eJU9ET9848SYpuqH\"]}},\"version\":1}",
@@ -575,8 +574,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-07T12:43:26.421Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-02-07T13:02:34.787Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
